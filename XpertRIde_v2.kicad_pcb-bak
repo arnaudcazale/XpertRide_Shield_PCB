@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 12)
+    (drawings 16)
     (tracks 590)
     (zones 0)
     (modules 44)
@@ -29,8 +29,8 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
+    (48 B.Fab user hide)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -2019,6 +2019,15 @@
       (xy 3.897966 -0.562416) (xy 4.117377 -0.51358)) (layer F.SilkS) (width 0.01))
   )
 
+  (gr_line (start 38.94 120.54) (end 38.94 70.04) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 89.54 120.54) (end 38.94 120.54) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 89.54 70.04) (end 89.54 120.54) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 38.94 70.04) (end 89.54 70.04) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 89.54 70.04) (end 89.54 120.54) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 38.94 70.04) (end 89.54 70.04) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 89.54 70.04) (end 89.54 120.54) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 77.74 70.04) (end 89.54 70.04) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 38.94 70.04) (end 77.74 70.04) (layer Edge.Cuts) (width 0.15))
   (gr_text XpertRide_v2 (at 67.64 75.24) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -2026,12 +2035,7 @@
   (gr_line (start 68.94 112.04) (end 68.94 119.54) (layer F.SilkS) (width 0.2))
   (gr_line (start 58.94 112.04) (end 68.94 112.04) (layer F.SilkS) (width 0.2))
   (gr_line (start 58.94 119.54) (end 58.94 112.04) (layer F.SilkS) (width 0.2))
-  (gr_line (start 77.74 81.84) (end 77.74 70.04) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 83.13 81.84) (end 77.74 81.84) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 89.54 120.51) (end 89.54 81.84) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 89.54 81.84) (end 83.14 81.84) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 38.94 120.51) (end 89.54 120.51) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 38.94 70.04) (end 38.94 120.51) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 38.94 70.04) (end 77.74 70.04) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 61.1775 106.215) (end 63.315 106.215) (width 0.25) (layer B.Cu) (net 1) (status 400000))
