@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:XpertRIde_v2-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -232,13 +231,13 @@ F 3 "" H 3000 2000 50  0001 C CNN
 	1    3000 2000
 	0    -1   -1   0   
 $EndComp
-Text Label 3300 2600 2    50   ~ 0
-Sensor8
-Text Label 3300 2700 2    50   ~ 0
-Sensor7
-Text Label 3300 2800 2    50   ~ 0
-Sensor6
 Text Label 3300 2900 2    50   ~ 0
+Sensor8
+Text Label 3300 2800 2    50   ~ 0
+Sensor7
+Text Label 3300 2700 2    50   ~ 0
+Sensor6
+Text Label 3300 2600 2    50   ~ 0
 Sensor5
 Text Label 3300 2500 2    50   ~ 0
 Sensor4
@@ -391,12 +390,12 @@ Wire Wire Line
 $Comp
 L Device:R R12
 U 1 1 5E9A254B
-P 5150 6000
-F 0 "R12" V 5250 6000 50  0000 C CNN
-F 1 "45k" V 5150 6000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5080 6000 50  0001 C CNN
-F 3 "~" H 5150 6000 50  0001 C CNN
-	1    5150 6000
+P 5150 5700
+F 0 "R12" V 5150 5250 50  0000 C CNN
+F 1 "45k" V 5150 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5080 5700 50  0001 C CNN
+F 3 "~" H 5150 5700 50  0001 C CNN
+	1    5150 5700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -673,12 +672,12 @@ $EndComp
 $Comp
 L Device:R R18
 U 1 1 5E9E19C1
-P 5400 2950
-F 0 "R18" V 5400 2500 50  0000 C CNN
-F 1 "400k" V 5400 2950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5330 2950 50  0001 C CNN
-F 3 "~" H 5400 2950 50  0001 C CNN
-	1    5400 2950
+P 5400 2650
+F 0 "R18" V 5400 2200 50  0000 C CNN
+F 1 "400k" V 5400 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5330 2650 50  0001 C CNN
+F 3 "~" H 5400 2650 50  0001 C CNN
+	1    5400 2650
 	0    1    1    0   
 $EndComp
 $Comp
@@ -777,34 +776,34 @@ Wire Wire Line
 $Comp
 L Device:R R19
 U 1 1 5E9F257E
-P 5400 2850
-F 0 "R19" V 5400 2400 50  0000 C CNN
-F 1 "500k" V 5400 2850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5330 2850 50  0001 C CNN
-F 3 "~" H 5400 2850 50  0001 C CNN
-	1    5400 2850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R20
-U 1 1 5E9F25C8
 P 5400 2750
-F 0 "R20" V 5400 2300 50  0000 C CNN
-F 1 "600k" V 5400 2750 50  0000 C CNN
+F 0 "R19" V 5400 2300 50  0000 C CNN
+F 1 "500k" V 5400 2750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 5330 2750 50  0001 C CNN
 F 3 "~" H 5400 2750 50  0001 C CNN
 	1    5400 2750
 	0    1    1    0   
 $EndComp
 $Comp
+L Device:R R20
+U 1 1 5E9F25C8
+P 5400 2850
+F 0 "R20" V 5400 2400 50  0000 C CNN
+F 1 "600k" V 5400 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5330 2850 50  0001 C CNN
+F 3 "~" H 5400 2850 50  0001 C CNN
+	1    5400 2850
+	0    1    1    0   
+$EndComp
+$Comp
 L Device:R R21
 U 1 1 5E9F2614
-P 5400 2650
-F 0 "R21" V 5400 2200 50  0000 C CNN
-F 1 "700k" V 5400 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5330 2650 50  0001 C CNN
-F 3 "~" H 5400 2650 50  0001 C CNN
-	1    5400 2650
+P 5400 2950
+F 0 "R21" V 5400 2500 50  0000 C CNN
+F 1 "700k" V 5400 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5330 2950 50  0001 C CNN
+F 3 "~" H 5400 2950 50  0001 C CNN
+	1    5400 2950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -838,24 +837,17 @@ Wire Wire Line
 	5250 2550 5150 2550
 Connection ~ 5150 2550
 Wire Wire Line
-	5150 2550 5150 2650
-Wire Wire Line
-	5250 2650 5150 2650
-Connection ~ 5150 2650
-Wire Wire Line
-	5150 2650 5150 2750
-Wire Wire Line
 	5250 2750 5150 2750
+Wire Wire Line
+	5250 2850 5150 2850
 Connection ~ 5150 2750
 Wire Wire Line
 	5150 2750 5150 2850
 Wire Wire Line
-	5250 2850 5150 2850
+	5250 2950 5150 2950
 Connection ~ 5150 2850
 Wire Wire Line
 	5150 2850 5150 2950
-Wire Wire Line
-	5250 2950 5150 2950
 Connection ~ 5150 2950
 Wire Wire Line
 	5150 2950 5150 3150
@@ -1239,13 +1231,9 @@ Wire Notes Line
 Wire Notes Line
 	6600 3750 6600 6650
 Wire Wire Line
-	5000 6000 4850 6000
-Wire Wire Line
-	4850 5600 4850 6000
-NoConn ~ 5300 5700
+	4850 5600 4850 5700
 Wire Wire Line
 	4700 6000 4850 6000
-Connection ~ 4850 6000
 $Comp
 L power:GNDD #PWR0101
 U 1 1 5EA02B33
@@ -1395,4 +1383,17 @@ F 3 "~" H 9700 2950 50  0001 C CNN
 	1    9700 2950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5150 2550 5150 2650
+Wire Wire Line
+	5250 2650 5150 2650
+Connection ~ 5150 2650
+Wire Wire Line
+	5150 2650 5150 2750
+NoConn ~ 5300 6000
+Wire Wire Line
+	5000 5700 4850 5700
+Connection ~ 4850 5700
+Wire Wire Line
+	4850 5700 4850 6000
 $EndSCHEMATC
